@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Flags_of_the_worldApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlagList()
         }
     }
 }

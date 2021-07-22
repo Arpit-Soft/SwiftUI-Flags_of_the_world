@@ -7,14 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FlagList: View {
     
     @State private var showModal = false
     @State private var selectedFlag = ""
+    @State private var country = ""
+    
     let flags = [["🇦🇫", "Country 1"], ["🇦🇽", "Country 2"], ["🇦🇱", "Country 3"], ["🇩🇿", "Country 4"], ["🇦🇸", "Country 5"], ["🇦🇩", "Country 6"]]
     
     var body: some View {
         VStack {
+            
+            Text(country)
+            
             List {
                 ForEach(flags, id: \.self) { flag in
                     HStack {
@@ -30,8 +35,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showModal, content: {
-                Text(selectedFlag)
-                    .font(.custom("Arial", size: 200))
+                FlagDetailView(flag: selectedFlag, country: $country, showModal: $showModal)
             })
             
             HStack {
@@ -51,6 +55,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FlagList()
     }
 }
