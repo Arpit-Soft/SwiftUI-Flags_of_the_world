@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D36EF1D26A960140075AE1C /* FlagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EF1C26A960140075AE1C /* FlagDetailView.swift */; };
+		2D36EF2626A96F440075AE1C /* FlagViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EF2526A96F440075AE1C /* FlagViewModal.swift */; };
 		2D9F5F2F26A8267A0066BF63 /* SwiftUI_Flags_of_the_worldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F5F2E26A8267A0066BF63 /* SwiftUI_Flags_of_the_worldApp.swift */; };
 		2D9F5F3126A8267A0066BF63 /* FlagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F5F3026A8267A0066BF63 /* FlagList.swift */; };
 		2D9F5F3326A8267D0066BF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9F5F3226A8267D0066BF63 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2D36EF1C26A960140075AE1C /* FlagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailView.swift; sourceTree = "<group>"; };
+		2D36EF2526A96F440075AE1C /* FlagViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModal.swift; sourceTree = "<group>"; };
 		2D9F5F2B26A8267A0066BF63 /* SwiftUI-Flags_of_the_world.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Flags_of_the_world.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9F5F2E26A8267A0066BF63 /* SwiftUI_Flags_of_the_worldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Flags_of_the_worldApp.swift; sourceTree = "<group>"; };
 		2D9F5F3026A8267A0066BF63 /* FlagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagList.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2D36EF2426A96F340075AE1C /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				2D36EF2526A96F440075AE1C /* FlagViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
 		2D9F5F2226A826790066BF63 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		2D9F5F2D26A8267A0066BF63 /* SwiftUI-Flags_of_the_world */ = {
 			isa = PBXGroup;
 			children = (
+				2D36EF2426A96F340075AE1C /* ViewModal */,
 				2D36EF1826A95FD50075AE1C /* View */,
 				2D9F5F2E26A8267A0066BF63 /* SwiftUI_Flags_of_the_worldApp.swift */,
 				2D9F5F3226A8267D0066BF63 /* Assets.xcassets */,
@@ -270,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D36EF2626A96F440075AE1C /* FlagViewModal.swift in Sources */,
 				2D9F5F3126A8267A0066BF63 /* FlagList.swift in Sources */,
 				2D9F5F2F26A8267A0066BF63 /* SwiftUI_Flags_of_the_worldApp.swift in Sources */,
 				2D36EF1D26A960140075AE1C /* FlagDetailView.swift in Sources */,
